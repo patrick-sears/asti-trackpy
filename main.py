@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import sys
 import os
@@ -110,7 +110,8 @@ for i in range(im_n):
     exit(1)
 
 
-frames = pims.ImageSequence(imfiles, as_grey=True)
+# frames = pims.ImageSequence(imfiles, as_grey=True)
+frames = pims.ImageSequence(imfiles)
 
 
 
