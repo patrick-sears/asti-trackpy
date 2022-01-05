@@ -6,7 +6,13 @@ wd=`pwd -P`
 
 cd "$HOME/bin"
 
-ln -sf "$wd/full_asti.py" "prs-asti-trackpy"
+lname="prs-asti-trackpy"
+
+if [[ -L "$lname" ]]; then
+  unlink "$lname"
+fi
+
+ln -sf "$wd/main.py" "$lname"
 
 
 
